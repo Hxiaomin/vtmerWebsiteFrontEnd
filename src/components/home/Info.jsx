@@ -121,7 +121,7 @@ export default class Info extends React.Component{
 			  backgroundImage: image,
 			};
 			return(
-				<li>
+				<li key={i}>
 					<div style={divStyle}>
 						<div className="mark"><span>{item.title1}</span><span>{item.title2}</span></div>
 					</div>

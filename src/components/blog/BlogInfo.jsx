@@ -48,7 +48,7 @@ export default class Info extends React.Component{
 		})	
 		let passages = this.passages.map((item, i)=>{ 
 			return( 
-			<Link to={'/passageDetail/' + item.id}>
+			<Link to={'/passageDetail/' + item.id} key={i}>
 				<div className="col-sm-6 col-md-4" key={i}>
 			    	<div className="thumbnail  passage-all">
 			    		<div className="page-header passage-header">

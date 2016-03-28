@@ -41,7 +41,7 @@ export default class Info extends React.Component{
 		}
 		let products = productList1.map((item, i)=>{
 			return(
-				<div className="row product-contain">
+				<div key={i} className="row product-contain">
 					<div className="row-product">
 					    <div className="product-image">
 					      	<a className="product-mark" href={item.productUrl}>
