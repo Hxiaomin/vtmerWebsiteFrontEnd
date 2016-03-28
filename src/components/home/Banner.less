@@ -1,0 +1,56 @@
+@fontColor:white;
+@otherColor:#e74b3c;
+@tiltLine:"/images/home/source.png";
+
+.transition(@transition) {
+  	transition:@transition;
+	-ms-transition:@transition; 	/* IE 9 */
+	-moz-transition:@transition; 	/* Firefox */
+	-webkit-transition:@transition; /* Safari 和 Chrome */
+	-o-transition:@transition; 	/* Opera */
+}
+.homepage-banner {
+	text-align: center;
+	font-size: 18px;
+	margin-top: 150px;
+	line-height: 35px;
+	color:@fontColor;
+}
+.vtmers {
+	font-size: 32px;
+	line-height: 50px;
+}
+.tilt-line {
+	width: 266px;
+	height: 5px;
+	margin: auto;
+	background-image: url(@tiltLine);
+}
+.vtmers b:last-child {
+	color: @otherColor;
+}
+.homepage-banner button {
+	width: 130px;
+	height: 45px;
+	border: solid 1px @fontColor;
+	background-color: #1c2836;
+	color: @fontColor;
+	font-size: 0.9em;
+	text-align:center;
+	position: relative;
+	margin-top: 60px;
+}
+.homepage-banner button span:nth-child(2){
+	position: absolute;
+	right: 20px;
+	visibility: hidden;
+}
+.homepage-banner button:hover {
+	background-color: #1abc9c;
+	cursor: pointer;
+	.transition(background 0.3s);
+}
+.homepage-banner button:hover span {
+	visibility: visible;
+	.transition(0.3s);
+}

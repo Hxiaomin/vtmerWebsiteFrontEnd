@@ -1,0 +1,41 @@
+@logo: '/images/logo.png';
+@vlogo: '/images/v.png';
+@color: #59DEB7;
+@navColor: #18232F;
+
+.vertical-center{ 
+	position:absolute;
+	top:8%; 
+	left:45%; 
+}
+.logo{
+	width: 125px;
+	height: 80px;
+	background: url(@logo) no-repeat center; 
+    display: inline-block;
+    margin-left: 24px;
+}
+
+.vlogo{ 
+	width: 115px;
+    height: 115px;
+    background: @navColor url(@vlogo) no-repeat center; 
+    .vertical-center;
+}
+
+nav{
+	margin-bottom: 0!important;
+	margin-top:50px;
+	background-color: @navColor;
+}
+.navbar-menu{
+	margin-right: 24px;
+	margin-top:15px;
+	a{
+		&:hover,
+		&.active{
+			border: 2px solid @color;
+			color: @color!important;
+		}
+	}
+}
